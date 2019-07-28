@@ -23,7 +23,6 @@
   RunLocalTests|RunAllTestsInOrg|RunSpecifiedTests] [-w <minutes>] [-y] [-r human|tap|junit|json] [-u <string>] 
   [--apiversion <string>] [--verbose] [--json] [--loglevel trace|debug|info|warn|error|fatal]
 
-
 * sfdx force:apex:test:run -u vuk.djukic_external.k2@coinbase.com.staging --testlevel=RunLocalTests
 
 * sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile file.key --username  -r $SALESFORCE_DOMAIN
