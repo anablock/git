@@ -27,22 +27,16 @@
 
 * sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile file.key --username  -r $SALESFORCE_DOMAIN
 
-##
-       The native transport (i.e. git:// URL) does no authentication and should be used with caution on unsecured
-       networks.
+## Git URLs
+The native transport (i.e. git:// URL) does no authentication and should be used with caution on unsecured networks.
 
-       The following syntaxes may be used with them:
-
+The following syntaxes may be used with them:
        o   ssh://[user@]host.xz[:port]/path/to/repo.git/
-
        o   git://host.xz[:port]/path/to/repo.git/
-
        o   http[s]://host.xz[:port]/path/to/repo.git/
-
        o   ftp[s]://host.xz[:port]/path/to/repo.git/
 
-       An alternative scp-like syntax may also be used with the ssh protocol:
-
+An alternative scp-like syntax may also be used with the ssh protocol:
        o   [user@]host.xz:path/to/repo.git/
 
        This syntax is only recognized if there are no slashes before the first colon. This helps differentiate a
